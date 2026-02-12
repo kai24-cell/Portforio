@@ -13,11 +13,13 @@ function Projects() {
       </Link>
 
       {/* プロジェクト 2:  */}
+      <Link to="/onetapclersound" style={{ textDecoration: 'none', color: 'inherit' }}>
       <div className="project-card">
         <h3>ONE Tap Clear Sound</h3>
         <p>音楽ファイルをAIでタグ分けして、対応する音質処理をするアプリケーション</p>
         <p><strong>技術スタック:</strong> Python, Pydub, Tensorflow, AzureAI</p>
       </div>
+      </Link>
 
       {/* プロジェクト 3:  */}
       <Link to="/shareex" style={{ textDecoration: 'none', color: 'inherit' }}>
