@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"; // リンク機能を使うため
-import OneTapClearSound from "../assets/onetapsample1.jpg";
+import OneTapClearSound from "../assets/Onetapsample1.jpg";
 function OnetapclerSoundpage() {
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto', padding: '20px' }}>
