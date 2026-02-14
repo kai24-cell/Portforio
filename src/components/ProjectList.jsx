@@ -29,20 +29,15 @@ function Projects() {
         <p><strong>技術スタック:</strong> Java</p>
       </div>
       </Link>
-
-      {/* プロジェクト 4:  */}
-      <div className="project-card">
-        <h4>Univer Support</h4>
-        <p>大学生活を補助するアプリ</p>
-        <p><strong>技術スタック:</strong>C++, Crow, AzureAI</p>
-      </div>
       
-      {/* プロジェクト 5:  */}
+      {/* プロジェクト 4:  */}
+      <Link to="/youtube" style={{ textDecoration: 'none', color: 'inherit' }}>
       <div className="project-card">
         <h5>Youtube official site</h5>
         <p>自身のYouTube公式サイト</p>
         <p><strong>技術スタック:</strong>Java, Tomcat, AWS(EC2, RDS), MySQL</p>
       </div>
+      </Link>
     </section>
   );
 }
