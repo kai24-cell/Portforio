@@ -25,7 +25,7 @@ TensorFlow を用いた深層学習など, 複数のアルゴリズムによる�
       期間は半年以上かかってしまいましたが、自力で研究を進めることができ、論文も採択されて発表もできたことは大きな自信になりました。
     </p>
     <p>
-    <a href="https://www.notion.so/2f8675a2548180338db4c9287f206129?showMoveTo=true&saveParent=true">
+    <a href="https://vagabond-umbra-bc9.notion.site/2f8675a2548180338db4c9287f206129">
     発表スライドはこちらから</a>
 </p>
       {/* ホームに戻るボタン */}
