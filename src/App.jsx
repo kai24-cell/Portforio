@@ -4,6 +4,7 @@ import ShareExPage from "./components/ShareEXpage";
 import Researchpage from "./components/Researchpage";
 import OnetapclerSoundpage from "./components/OnetapclerSoundpage";
 import YoutubeWebpage from "./components/YoutubeWebpage";
+import Skinnaviapage from "./components/Skinnaviapage";
 import "./App.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/research" element={<Researchpage />} />
         <Route path="/onetapclersound" element={<OnetapclerSoundpage />} />
         <Route path="/youtube" element={<YoutubeWebpage />} />
+        <Route path="/skinnavia" element={<Skinnaviapage />} />
       </Routes>
     </div>
   );

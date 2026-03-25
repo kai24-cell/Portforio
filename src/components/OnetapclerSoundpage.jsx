@@ -15,7 +15,9 @@ function OnetapclerSoundpage() {
         その際、なるべくシンプルなUI/UXをフロントエンド担当と相談しながら設計する連携力、
         初めて触る技術であるTensorflowの機械学習モデル構築とPydubの音声処理の情報を調べながら実装する点で苦労しました。
       </div>
-      <h4>デモ動画</h4>
+      <h4>担当</h4>
+      <p>2人チーム開発のリーダー兼バックエンドを務め、CNNモデルの構築やPydubライブラリを用いた音質処理のバックエンドを担当しました</p>
+      <h5>デモ動画</h5>
       <div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
         <iframe width="560" 
         height="315" 

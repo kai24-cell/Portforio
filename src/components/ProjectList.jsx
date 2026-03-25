@@ -17,7 +17,7 @@ function Projects() {
       <div className="project-card">
         <h3>ONE Tap Clear Sound</h3>
         <p>音楽ファイルをAIでタグ分けして、対応する音質処理をするアプリケーション</p>
-        <p><strong>技術スタック:</strong> Python, Pydub, Tensorflow, AzureAI</p>
+        <p><strong>技術スタック:</strong> Python(Flask), Pydub, Tensorflow, AzureAI</p>
       </div>
       </Link>
 
@@ -26,7 +26,7 @@ function Projects() {
       <div className="project-card">
         <h4>ShareEX</h4>
         <p>技術レポートを投稿/共有するためのプラットフォームアプリ</p>
-        <p><strong>技術スタック:</strong> Java, PostgreSQL, HTML/CSS, JavaScript</p>
+        <p><strong>技術スタック:</strong> Java(Spring Boot), PostgreSQL, HTML/CSS, JavaScript</p>
       </div>
       </Link>
       
@@ -35,7 +35,15 @@ function Projects() {
       <div className="project-card">
         <h5>Youtube official site</h5>
         <p>自身のYouTube公式サイト</p>
-        <p><strong>技術スタック:</strong>Java, Tomcat, AWS(EC2, RDS), MySQL, AWS(EC2, RDS), HTML/CSS, JavaScript</p>
+        <p><strong>技術スタック:</strong>Java(Tomcat), AWS(EC2, RDS), MySQL, AWS(EC2, RDS), HTML/CSS, JavaScript</p>
+      </div>
+      </Link>
+      {/*プロジェクト 5:  */}
+      <Link to="/skinnavia" style={{ textDecoration: 'none', color: 'inherit' }}>
+      <div className="skinnavia">
+        <h6>スキンナビア</h6>
+        <p>健康商品のレコメンドアプリ</p>
+        <p><strong>技術スタック</strong>Java(Spring Boot), Python(FastAPI), HTML/CSS, JavaScript</p>
       </div>
       </Link>
     </section>
