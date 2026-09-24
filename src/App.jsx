@@ -18,7 +18,7 @@ function App() {
         <Route path="/onetapclersound" element={<OnetapclerSoundpage />} />
         <Route path="/youtube" element={<YoutubeWebpage />} />
         <Route path="/skinnavia" element={<Skinnaviapage />} />
-        <Route path="/Longintern" element={<LongInternpage />} />
+        <Route path="/longintern" element={<LongInternpage />} />
       </Routes>
     </div>
   );

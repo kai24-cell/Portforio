@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom"; // リンク機能を使うため
+import { internshipData } from "../data/internshipData";
 function Projects() {
   return (
     <section>
@@ -13,11 +14,10 @@ function Projects() {
       </Link>
 
       {/*プロジェクト 2: */}
-      <Link to="/LongIntern" style={{ textDecoration: 'none', color: 'inherit' }}>
-      <div className="project-card">
-        <h3>長期インターンシップ</h3>
-        <p>東京大学松尾岩澤研究所共同研究プロジェクト長期インターンシップ</p>
-      </div>
+      <Link to="/longintern" className="project-card internship-card">
+        <h2>長期インターンシップ</h2>
+        <p>{internshipData.title}</p>
+        <span>詳細を見る →</span>
       </Link>
 
       {/* プロジェクト 2:  */}

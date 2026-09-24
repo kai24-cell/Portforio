@@ -46,3 +46,44 @@
   padding: 10px;
   margin: 10px 0;
 }
+
+.internship-card {
+  display: block;
+  padding: 20px;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+.internship-card:hover,
+.internship-card:focus-visible {
+  color: inherit;
+  border-color: #646cff;
+}
+
+.internship-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow-wrap: anywhere;
+}
+
+.internship-detail :is(h1, h2, h3, h4, h5, h6) {
+  font-size: clamp(1.5rem, 4vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 24px;
+  text-align: left;
+}
+
+.internship-description {
+  margin: 32px 0;
+  text-align: left;
+  line-height: 1.9;
+}
+
+.internship-description p {
+  margin: 0 0 24px;
+  white-space: pre-line;
+}
