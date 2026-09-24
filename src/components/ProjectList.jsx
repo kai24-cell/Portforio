@@ -6,10 +6,18 @@ function Projects() {
       {/* プロジェクト 1: 研究 */}
       <Link to="/research" style={{ textDecoration: 'none', color: 'inherit' }}>
         <div className="project-card" >
-          <h2>サーバーログの異常検知に関する研究</h2>
-          <p>第170回 システムソフトウェアとオペレーティングシステム研究会にて発表</p>
-          <p><strong>技術スタック:</strong> Python, Machine Learning, AWS(EC2, S3)</p>
+          <h2>研究</h2>
+          <p>1. ICAITD 2026</p>
+          <p>2. 情報処理学会</p>
         </div>
+      </Link>
+
+      {/*プロジェクト 2: */}
+      <Link to="/LongIntern" style={{ textDecoration: 'none', color: 'inherit' }}>
+      <div className="project-card">
+        <h3>長期インターンシップ</h3>
+        <p>東京大学松尾岩澤研究所共同研究プロジェクト長期インターンシップ</p>
+      </div>
       </Link>
 
       {/* プロジェクト 2:  */}

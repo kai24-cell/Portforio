@@ -1,33 +1,42 @@
 import { Link } from "react-router-dom"; // リンク機能を使うため
 import ResearchpageImage from "../assets/ResearchPre.jpg"; // 研究ページの画像をインポート
+import ICAITDImage from "../assets/ICAITD.png"; // ICAITD 2026の画像をインポート
+import { researchData } from "../data/researchData";
 
 function Researchpage() {
   return (
-    <div style={{ maxWidth: '800px', margin: '0 auto', padding: '20px' }}>
-      <h1>研究 詳細</h1>
-      <img src={ResearchpageImage} alt="研究発表画像" style={{ width: '100%' }} />
-      
-      <h2>概要</h2>
-      <p>機械学習を用いたサーバログの異常検知モデルの構築と評価というテーマの論文が情報処理学会で採択され、<br/>2026年2月17日(B2)第170回システムソフトウェアとオペレーティング・システム研究会発表で発表してきました。<br />また、摂南大学の学科長から大学のホームページとインスタにて広報として活用されました。</p>
-      
-      <h3>アブストラクト</h3>
-      <p>オンラインゲームや Web サービスなどで発生するサーバー障害は, サービス品質の低下を招く重
-大な課題である. しかし, 人力による監視ではヒューマンエラーにより発見が遅れるリスクが高い. そ
-こで本研究では, サーバーログを用いた機械学習による高精度な異常検知モデルの構築を目的とする. 
-具体的には, AWS EC2 環境上で疑似的に障害を発生させ, CPU 使用率などの特徴量を収集したデータを
-S3 上に蓄積し, CSV 化する. その後, Pandas を用いたデータ前処理を行い, ランダムフォレストや
-TensorFlow を用いた深層学習など, 複数のアルゴリズムによるモデル構築と精度の比較を行う. 評価実
-験を通じて, 各手法の検知精度や特性を明らかにし, サーバー監視に最適なモデル構築を検討する. 
-キーワード: 機械学習, サーバーログ, AWS </p>
-    <h4>アピールポイント</h4>
-    <p>当時研究室に配属されていなかったため、Google Scholarや大学の図書館を活用して背景とテーマを固め、
-      大学の教員にメールでアポを取り、サポートを受けながら研究を進めました。
-      期間は半年以上かかってしまいましたが、自力で研究を進めることができ、論文も採択されて発表もできたことは大きな自信になりました。
-    </p>
-    <p>
-    <a href="https://vagabond-umbra-bc9.notion.site/2f8675a2548180338db4c9287f206129">
-    発表スライドはこちらから</a>
-</p>
+    <div >
+      <div style={{ maxWidth: '800px', margin: '0 auto', padding: '20px' }}>
+        <h1 style={{ textAlign: 'center' }}>{researchData.title}</h1>
+        <h2>{researchData.overviewSection}</h2>
+        <p>{researchData.overview}</p>
+        
+        <div style={{ display: 'flex', alignItems: 'center', gap: '20px', margin: '20px 0' }}>
+          <h3 style={{ textAlign: 'left', lineHeight: '1.6' }}>
+            {researchData.confTitle}<br />
+            <h4>{researchData.confText}</h4>
+            {researchData.paperTitle}
+            <h5><a href={researchData.officialPageLink} target="_blank" rel="noopener noreferrer">
+    {researchData.officialPageText}</a></h5>
+          </h3>
+          <img src={ICAITDImage} alt="ICAITD 2026査読通知" style={{ width: '40%' }} />
+        </div>
+
+        <div style={{ display: 'flex', alignItems: 'center', gap: '20px', margin: '20px 0' }}>
+          <h4 style={{ textAlign: 'left', lineHeight: '1.6' }}>
+            {researchData.confTitle_second}<br />
+            <h5>{researchData.confText_second}</h5>
+            {researchData.paperTitle_second}
+            <h6><a href={researchData.officialPageLink_second} target="_blank" rel="noopener noreferrer">
+    {researchData.officialPageText_second}</a></h6>
+            <h7><a href={researchData.presentationSlideLink} target="_blank" rel="noopener noreferrer">
+    発表スライドはこちらから</a></h7>
+          </h4>
+          <img src={ResearchpageImage} alt="研究発表画像" style={{ width: '40%' }} />
+          
+        </div>
+      </div>
+  
       {/* ホームに戻るボタン */}
       <Link to="/">← ホームに戻る</Link>
     </div>
