@@ -2,7 +2,6 @@ import {Link} from "react-router-dom"; // リンク機能を使うため
 function Projects() {
   return (
     <section className="projects-section">
-      <h1>My Projects & Research</h1>
       <div className="project-grid project-grid-featured">
       {/* プロジェクト 1: 研究 */}
       <Link to="/research" className="project-card">

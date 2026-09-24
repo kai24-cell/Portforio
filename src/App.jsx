@@ -7,10 +7,13 @@ import YoutubeWebpage from "./components/YoutubeWebpage";
 import Skinnaviapage from "./components/Skinnaviapage";
 import LongInternpage from "./components/LongIntern";
 import "./App.css";
+import CodeBackground from "./components/CodeBackground";
 
 function App() {
   return (
-    <div className="container">
+    <>
+      <CodeBackground />
+      <div className="container">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/shareex" element={<ShareExPage />} />
@@ -21,6 +24,7 @@ function App() {
         <Route path="/longintern" element={<LongInternpage />} />
       </Routes>
     </div>
+    </>
   );
 }
 
