@@ -1,28 +1,25 @@
+import { oneTapClearSoundData, projectPageLabels } from "../data/Data";
 import { Link } from "react-router-dom"; // リンク機能を使うため
 import OneTapClearSound from "../assets/Onetapsample1.jpg";
 function OnetapclerSoundpage() {
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto', padding: '20px' }}>
-      <h1>One Tap Clear Sound 詳細</h1>
-      <img src={OneTapClearSound} alt="会場"  />
+      <h1>{oneTapClearSoundData.title}</h1>
+      <img src={OneTapClearSound} alt={oneTapClearSoundData.imageAlt}  />
       
-      <h2>概要</h2>
-      <p>音楽ファイルをAIでタグ分けして、対応する音質処理をするアプリケーションです。</p>
-      <div>サイバーエージェント主催Re; Build in 愛知で発表(画像)<br />
-      Microsoft主催ImagineCapへ投稿しました。(デモ動画)</div>
-      <h3>苦労したところ</h3>
-      <div>本アプリは初心者SNS投稿者を対象としており、ワンタップで高音質にするというコンセプトで制作しました。
-        その際、なるべくシンプルなUI/UXをフロントエンド担当と相談しながら設計する連携力、
-        初めて触る技術であるTensorflowの機械学習モデル構築とPydubの音声処理の情報を調べながら実装する点で苦労しました。
-      </div>
-      <h4>担当</h4>
-      <p>2人チーム開発のリーダー兼バックエンドを務め、CNNモデルの構築やPydubライブラリを用いた音質処理のバックエンドを担当しました</p>
-      <h5>デモ動画</h5>
+      <h2>{oneTapClearSoundData.overviewSection}</h2>
+      <p>{oneTapClearSoundData.overview}</p>
+      <div style={{ whiteSpace: "pre-line" }}>{oneTapClearSoundData.presentation}</div>
+      <h3>{oneTapClearSoundData.challengesSection}</h3>
+      <div>{oneTapClearSoundData.challenges}</div>
+      <h4>{oneTapClearSoundData.roleSection}</h4>
+      <p>{oneTapClearSoundData.role}</p>
+      <h5>{oneTapClearSoundData.demoSection}</h5>
       <div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
         <iframe width="560" 
         height="315" 
-        src="https://www.youtube.com/embed/YBpncVFS4x0?si=v4HzVghc6Hv8PAM4" 
-        title="YouTube video player" 
+        src={oneTapClearSoundData.videoUrl} 
+        title={oneTapClearSoundData.videoTitle} 
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerpolicy="strict-origin-when-cross-origin" 
@@ -33,7 +30,7 @@ function OnetapclerSoundpage() {
       
 
       {/* ホームに戻るボタン */}
-      <Link to="/">← ホームに戻る</Link>
+      <Link to="/">{projectPageLabels.backToHome}</Link>
     </div>
   );
 }
