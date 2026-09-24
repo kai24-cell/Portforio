@@ -107,9 +107,65 @@
 }
 
 @media (max-width: 540px) {
-  .project-grid-featured,
+  #root {
+    padding: 20px 16px;
+  }
+
+  .hero-section h1,
+  .projects-section > h1 {
+    font-size: clamp(1.4rem, 6vw, 1.8rem);
+    line-height: 1.4;
+    margin: 20px 0 16px;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-section p {
+    font-size: 0.875rem;
+    line-height: 1.8;
+  }
+
+  .project-grid {
+    gap: 12px;
+  }
+
+  .project-grid-featured {
+    margin-bottom: 16px;
+  }
+
   .project-grid-apps {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .project-card {
+    aspect-ratio: auto;
+    padding: 16px;
+    gap: 8px;
+  }
+
+  .project-grid-featured .project-card {
+    min-height: 140px;
+    padding: 12px;
+  }
+
+  .project-grid-featured h2,
+  .project-grid-apps h2 {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .project-grid-featured p,
+  .project-grid-featured span {
+    font-size: 0.8125rem;
+    line-height: 1.6;
+  }
+
+  .project-grid-apps .project-card {
+    text-align: left;
+  }
+
+  .project-grid-apps p {
+    font-size: 0.875rem;
+    line-height: 1.6;
   }
 }
 
